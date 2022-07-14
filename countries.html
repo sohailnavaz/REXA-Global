@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REXA Global | Residence</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/table.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            font-family: 'Gruppo';
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            font-size: 2rem;
+            color: rgb(231, 231, 231);
+            text-shadow: 1px 1px 2px;
+        }
+
+        .col img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .parallax {
+            /* The image used */
+
+            background-image: url("/assets/images/bg-1.png");
+
+            /* Set a specific height */
+
+            min-height: 90VH;
+
+
+            /* Create the parallax scrolling effect */
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sticky">
+        <h2>R<span style="color: rgb(76, 119, 201);">E</span>XA Global</h2>
+    </div>
+    <div id="sideNav">
+
+        <nav>
+            <ul>
+                <h2>R<span style="color: rgb(76, 119, 201);">E</span>XA Global</h2>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./citizen.html">Citizenship</a></li>
+                <li><a href="./residency.html">Residence</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="./countries.html">Countries</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="./newsroom.htm">News Room</a></li>
+                <li><a href="./events.html">Events</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="subscribe">
+            <div class="form">
+                <p> Subscribe To Our News Letter</p>
+                <input type="email" class="form__email" placeholder="Enter your email address"
+                    style=" font-size: 10px;" />
+                <button class="form__button">Send</button>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <a class="hover-fx">
+                <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.3174 14.0625L19.0117 9.53809H14.6704V6.60205C14.6704 5.36426 15.2769 4.15771 17.2212 4.15771H19.1948V0.305664C19.1948 0.305664 17.4038 0 15.6914 0C12.1162 0 9.7793 2.16699 9.7793 6.08984V9.53809H5.80518V14.0625H9.7793V25H14.6704V14.0625H18.3174Z"
+                        fill="#162633" />
+                </svg>
+            </a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+            </a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                </svg></a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
+                </svg></a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                </svg></a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                </svg></a>
+        </div>
+
+
+    </div>
+    <div id="menuBtn">
+        <img src="assets/icons/menu.png" id="menu">
+    </div>
+
+    <div class="parallax"></div>
+    <h1>Migration Countries</h1>
+    <section class="marevr">
+        <div class="tc">
+            <h2>Investment Migration Countries</h2>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    A growing number of countries host residence and citizenship by investment programs (also known as
+                    golden visa programs) that offer a variety of attractive investment options designed to cater to
+                    each
+                    family’s unique requirements. In an unsettled, ever-changing world, wealthy individuals need a plan
+                    B
+                    for themselves and their families — one that offers them a safer place to live in times of crisis,
+                    while
+                    also providing them with greater access to global business and lifestyle opportunities.
+                </p>
+            </div>
+            <div class="col">
+                <P>
+                    Investing in different residence and/or citizenship options worldwide offers both short-term value
+                    and
+                    long-term yield. The more access you have, the more diversified your assets and the lower your
+                    exposure
+                    to regional and global volatility. Below is the entire range of investment migration programs Henley
+                    &
+                    Partners is proud to offer our clients.
+                </P>
+            </div>
+
+
+        </div>
+        <a class="ghost_btn1 btncent" href="#">Private Client Query</a>
+
+        <!-- section5 citizenship -->
+        <!-- data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="3000" -->
+        <div class="container " style="margin-top: 10rem;">
+            <h2 class="sec5-1">Residence by Investment Programs</h2>
+
+        </div>
+
+
+    </section>
+    <div class="tabNavContent" id="tabNavContent">
+
+        <div class="second-section section-mt">
+
+
+            <!--<h2 class="">Investment Migration Programs</h2>-->
+            <!-- COUNTRIES ALL -->
+            <div class="container">
+                <div class="card-grid-container">
+
+                    <div class="countrylisttable">
+                        <h2>European Citizenship by Investment Programs</h2>
+                        <table class="countries-table table-component rtable">
+                            <thead>
+                                <tr class="mb12">
+                                    <td class="c1"></td>
+                                    <td class="c2">
+                                        <p class="text blue">&nbsp;Minimum capital</p>
+                                    </td>
+                                    <td class="c3">
+                                        <p class="text blue">&nbsp;Processing time</p>
+                                    </td>
+                                    <td class="c4">
+                                        <p class="text blue">&nbsp;Key benefit</p>
+                                    </td>
+                                    <td class="c5"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/austria">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Austria.png"
+                                                        alt="Austria" width="45" height="45"></span> Austria</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">Substantial contribution to the Austrian economy</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">24–36 months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Opportunity to become an EU citizen upon making a
+                                            substantial capital contribution</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/austria"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/malta">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Malta.png"
+                                                        alt="Malta" width="45" height="45"></span> Malta</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 738,000 investment</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">14–38 months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">An attractive place in which to live or own a second home,
+                                            strategically located, with excellent air links</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/malta"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/montenegro">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Montenegro.png"
+                                                        alt="Montenegro" width="45" height="45"></span> Montenegro</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 450,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Eight–ten months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Free movement to Montenegro, the countries in Europe’s
+                                            Schengen Area, Russia, and Türkiye</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/montenegro"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/north-macedonia">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/north-macedonia.png"
+                                                        alt="North Macedonia" width="45" height="45"></span> North
+                                                Macedonia</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 200,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Two–five months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Free movement to Hong Kong, Japan, Singapore, Türkiye, and
+                                            Europe’s Schengen Area, among others, as well as an e-visa to India</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/north-macedonia"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/turkey">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/crest_turkey.png"
+                                                        alt="Türkiye" width="45" height="45"></span> Türkiye</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 400,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">120 days</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Free movement to Türkiye, Hong Kong, Japan, and Singapore,
+                                            among others</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/turkey"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>Caribbean Citizenship by Investment Programs</h2>
+                        <table class="countries-table table-component rtable">
+                            <thead>
+                                <tr class="mb12">
+                                    <td class="c1"></td>
+                                    <td class="c2">
+                                        <p class="text blue">&nbsp;Minimum capital</p>
+                                    </td>
+                                    <td class="c3">
+                                        <p class="text blue">&nbsp;Processing time</p>
+                                    </td>
+                                    <td class="c4">
+                                        <p class="text blue">&nbsp;Key benefit</p>
+                                    </td>
+                                    <td class="c5"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/antigua-barbuda">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Antigua-Barbuda.png"
+                                                        alt="Antigua and Barbuda" width="45" height="45"></span> Antigua
+                                                and Barbuda</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 100,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three–four months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Visa-free or visa-on-arrival travel to 150 destinations
+                                            including Hong Kong, Russia, Singapore, the UK, and Europe’s Schengen Area
+                                        </p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/antigua-barbuda"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/dominica">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/dominica-caribbean-official-crest.png"
+                                                        alt="Dominica" width="45" height="45"></span> Dominica</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 100,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Visa-free or visa-on-arrival travel to 144 destinations
+                                            worldwide</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/dominica"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/grenada">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Grenada.png"
+                                                        alt="Grenada" width="45" height="45"></span> Grenada</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 150,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three–four months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Visa-free or visa-on-arrival travel to 144 destinations
+                                            including China, Russia, Singapore, the UK, and Europe’s Schengen Area</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/grenada"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/st-kitts-nevis">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/St-Kitts-Nevis.png"
+                                                        alt="St. Kitts and Nevis" width="45" height="45"></span> St.
+                                                Kitts and Nevis</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 150,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three–six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Visa-free or visa-on-arrival travel to 156 destinations
+                                            including Hong Kong, Russia, Singapore, the UK, and Europe’s Schengen Area
+                                        </p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/st-kitts-nevis"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/st-lucia">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/St-Lucia.png"
+                                                        alt="St. Lucia" width="45" height="45"></span> St. Lucia</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 100,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three–four months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Visa-free or visa-on-arrival travel to 146 destinations
+                                            including Hong Kong, Singapore, the UK, and Europe’s Schengen Area</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/st-lucia"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>Middle Eastern Citizenship by Investment Program</h2>
+                        <table class="countries-table table-component rtable">
+                            <thead>
+                                <tr class="mb12">
+                                    <td class="c1"></td>
+                                    <td class="c2">
+                                        <p class="text blue">&nbsp;Minimum capital</p>
+                                    </td>
+                                    <td class="c3">
+                                        <p class="text blue">&nbsp;Processing time</p>
+                                    </td>
+                                    <td class="c4">
+                                        <p class="text blue">&nbsp;Key benefit</p>
+                                    </td>
+                                    <td class="c5"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/citizenship-investment/jordan">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/jordan.png"
+                                                        alt="Jordan" width="45" height="45"></span> Jordan</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 750,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study in Jordan</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/citizenship-investment/jordan"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>European Residence by Investment Programs</h2>
+                        <table class="countries-table table-component rtable">
+                            <thead>
+                                <tr class="mb12">
+                                    <td class="c1"></td>
+                                    <td class="c2">
+                                        <p class="text blue">&nbsp;Minimum capital</p>
+                                    </td>
+                                    <td class="c3">
+                                        <p class="text blue">&nbsp;Processing time</p>
+                                    </td>
+                                    <td class="c4">
+                                        <p class="text blue">&nbsp;Key benefit</p>
+                                    </td>
+                                    <td class="c5"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/austria">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Austria.png"
+                                                        alt="Austria" width="45" height="45"></span> Austria</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 40,000 in liquid funds, German language skills, permanent
+                                            accommodation, and more</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Possibility for citizenship eligibility after 10 years of
+                                            residence</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/austria"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/cyprus">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Cyprus.png"
+                                                        alt="Cyprus" width="45" height="45"></span> Cyprus</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 330,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Two–eighteen months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live and study in Cyprus</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/cyprus"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/greece">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Greece.png"
+                                                        alt="Greece" width="45" height="45"></span> Greece</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 250,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">One–two months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right of free movement to Greece and Europe’s Schengen
+                                            Area</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/greece"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/italy">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Italy.png"
+                                                        alt="Italy" width="45" height="45"></span> Italy</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 250,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three–four months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Italy</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/italy"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/jersey">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/files/img/crests/res/crest-jersey-england.png"
+                                                        alt="Jersey" width="45" height="45"></span> Jersey</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">GBP 145,000 annual taxes</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">N/A</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Jersey</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/jersey"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/latvia">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Latvia.png"
+                                                        alt="Latvia" width="45" height="45"></span> Latvia</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 50,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">One–three months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Latvia</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/latvia"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/luxembourg">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Luxembourg.png"
+                                                        alt="Luxembourg" width="45" height="45"></span> Luxembourg</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 500,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Approximately six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Luxembourg</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/luxembourg"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/malta">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Malta.png"
+                                                        alt="Malta" width="45" height="45"></span> Malta</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 175,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Four–six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Malta</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/malta"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/monaco">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/files/img/crests/res/crest-monaco.png"
+                                                        alt="Monaco" width="45" height="45"></span> Monaco</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">No minimum investment</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">N/A</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Monaco</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/monaco"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/portugal">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Portugal.png"
+                                                        alt="Portugal" width="45" height="45"></span> Portugal</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 200,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Over six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Portugal</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/portugal"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/spain">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/spain_crest.png"
+                                                        alt="Spain" width="45" height="45"></span> Spain</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">EUR 500,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">20 days</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study in Spain, and free
+                                            movement to the EU and Europe’s Schengen Area</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/spain"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/switzerland">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Switzerland.png"
+                                                        alt="Switzerland" width="45" height="45"></span> Switzerland
+                                            </h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">CHF 250,000 annual taxes</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three–six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">First-class infrastructure and excellent banking
+                                            facilities</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/switzerland"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/united-kingdom">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/United-Kingdom.png"
+                                                        alt="United Kingdom" width="45" height="45"></span> United
+                                                Kingdom</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">GBP 50,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">One–eight weeks</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study anywhere in the United
+                                            Kingdom</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/united-kingdom"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>American Residence by Investment Programs</h2>
+                        <table class="countries-table table-component rtable">
+                            <thead>
+                                <tr class="mb12">
+                                    <td class="c1"></td>
+                                    <td class="c2">
+                                        <p class="text blue">&nbsp;Minimum capital</p>
+                                    </td>
+                                    <td class="c3">
+                                        <p class="text blue">&nbsp;Processing time</p>
+                                    </td>
+                                    <td class="c4">
+                                        <p class="text blue">&nbsp;Key benefit</p>
+                                    </td>
+                                    <td class="c5"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/canada">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Canada.png"
+                                                        alt="Canada" width="45" height="45"></span> Canada</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">Innovative start-up business</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">12–31 months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Canada</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/canada"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/panama">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Panama.png"
+                                                        alt="Panama" width="45" height="45"></span> Panama</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 100,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">30 days, or four–six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study in Panama</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/panama"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/united-states">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/files/img/crests/res/crest-usa.png"
+                                                        alt="United States of America" width="45" height="45"></span>
+                                                United States of America</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 800,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Approximately 18–24 months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            the USA</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/united-states"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>Asian and Pacific Residence by Investment Programs</h2>
+                        <table class="countries-table table-component rtable">
+                            <thead>
+                                <tr class="mb12">
+                                    <td class="c1"></td>
+                                    <td class="c2">
+                                        <p class="text blue">&nbsp;Minimum capital</p>
+                                    </td>
+                                    <td class="c3">
+                                        <p class="text blue">&nbsp;Processing time</p>
+                                    </td>
+                                    <td class="c4">
+                                        <p class="text blue">&nbsp;Key benefit</p>
+                                    </td>
+                                    <td class="c5"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/australia">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Australia.png"
+                                                        alt="Australia" width="45" height="45"></span> Australia</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">AUD 2.5 million (Investor Stream)</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">12 months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            Australia</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/australia"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/hong-kong">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Hong-Kong.png"
+                                                        alt="Hong Kong" width="45" height="45"></span> Hong Kong</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">No minimum investment</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Four–eight months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Strategic location and premier gateway for trade and
+                                            investment to and from mainland China</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/hong-kong"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/malaysia">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Malaysia.png"
+                                                        alt="Malaysia" width="45" height="45"></span> Malaysia</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">MYR 1 million</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three–six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">10-year multiple-entry visa enabling the applicant and
+                                            their family to live in Malaysia</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/malaysia"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/new-zealand">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/New-Zealand.png"
+                                                        alt="New Zealand" width="45" height="45"></span> New Zealand
+                                            </h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">NZD 3 million</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Five–six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and study without restriction in
+                                            New Zealand</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/new-zealand"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/singapore">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Singapore.png"
+                                                        alt="Singapore" width="45" height="45"></span> Singapore</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">SGD 2.5 million</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Nine–twelve months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">World-class education, healthcare, and transport systems
+                                        </p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/singapore"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/thailand">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/Thailand.png"
+                                                        alt="Thailand" width="45" height="45"></span> Thailand</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">THB 600,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Two–three months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">Long-term, privilege multiple-entry permit as well as
+                                            luxury, VIP treatment</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/thailand"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>African Residence by Investment Program</h2>
+                        <table class="countries-table table-component rtable">
+                            <thead>
+                                <tr class="mb12">
+                                    <td class="c1"></td>
+                                    <td class="c2">
+                                        <p class="text blue">&nbsp;Minimum capital</p>
+                                    </td>
+                                    <td class="c3">
+                                        <p class="text blue">&nbsp;Processing time</p>
+                                    </td>
+                                    <td class="c4">
+                                        <p class="text blue">&nbsp;Key benefit</p>
+                                    </td>
+                                    <td class="c5"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/mauritius">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/mauritius-crest.png"
+                                                        alt="Mauritius" width="45" height="45"></span> Mauritius</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">USD 375,000</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Two–six months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live, work, and retire in Mauritius</p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a href="/residence-investment/mauritius"
+                                                class="text-link">More info</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 >Middle Eastern Residence by Investment Program</h2>
+                        <table class="countries-table table-component rtable">
+                            <thead>
+                                <tr class="mb12">
+                                    <td class="c1"></td>
+                                    <td class="c2">
+                                        <p class="text blue">&nbsp;Minimum capital</p>
+                                    </td>
+                                    <td class="c3">
+                                        <p class="text blue">&nbsp;Processing time</p>
+                                    </td>
+                                    <td class="c4">
+                                        <p class="text blue">&nbsp;Key benefit</p>
+                                    </td>
+                                    <td class="c5"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="/residence-investment/united-arab-emirates">
+                                            <h3 class="mb20 mt20"><span class="crest-holder"><img loading="lazy"
+                                                        class="card-crest"
+                                                        src="https://cdn.henleyglobal.com/storage/app/media/COUNTRIES/CRESTS/United-Arab-Emirates.png"
+                                                        alt="United Arab Emirates" width="45" height="45"></span> United
+                                                Arab Emirates</h3>
+                                        </a>
+                                    </td>
+                                    <td data-label="Minimum capital">
+                                        <p class="text">AED 2 million</p>
+                                    </td>
+                                    <td data-label="Processing time">
+                                        <p class="text">Three months</p>
+                                    </td>
+                                    <td data-label="Key benefit">
+                                        <p class="text mw200">The right to live in any of the seven emirates of the UAE
+                                        </p>
+                                    </td>
+                                    <td data-label="">
+                                        <p class="text-link-wrapper"><a
+                                                href="/residence-investment/united-arab-emirates" class="text-link">More
+                                                info</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Contact Section -->
+        <div id="contact-us-component" class="contact-section-wrapper slide-in section-mt">
+            <div class="bg-grey bgl"></div>
+            <div class="container container-contact-us">
+                <div class="row row-contact">
+                    <div class="col-md-4">
+                        <h2>Contact us today</h2>
+                        <p class="lead">Henley &amp; Partners assists international clients in obtaining residence and
+                            citizenship under the respective programs. Contact us to arrange an initial private
+                            consultation.</p>
+                        <div class="btn-wrapper"><a href="/contact" class="tertiary-btn" tabindex="-1">ENQUIRY</a></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="nmr img-wrapper"><img loading="lazy" class="right-img"
+                                src="https://cdn.henleyglobal.com/storage/app/media/CONTACT/contact%20professional%20industry%20expert.jpg"
+                                data-object-fit="cover" alt="smiling professional business meeting" height="400"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <iframe src="./ctc.htm" frameborder="0" style="width: 100vw; height:60vh;overflow: hidden;" scroll="no"></iframe>
+    <iframe src="./footer.htm" style="width: 100%; height: 30vh; margin-bottom: -6px;" frameborder="0"></iframe>
+
+
+
+
+
+
+
+    <!-- <script></script> -->
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right == "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "assets/icons/close.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "assets/icons/menu.png";
+            }
+        }
+
+        $(document).ready(function () {
+
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html >
+
+

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REXA Global | Citizenship</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 100;
+            font-family: 'Gruppo';
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            font-size: 2rem;
+            color: rgb(41, 41, 41);
+            text-shadow: 2px 2px 5px;
+        }
+
+        .parallax {
+            /* The image used */
+
+            background-image: url("/assets/images/bg.jpg");
+
+            /* Set a specific height */
+
+            min-height: 90VH;
+
+
+            /* Create the parallax scrolling effect */
+
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sticky">
+        <h2>R<span style="color: rgb(76, 119, 201);">E</span>XA Global</h2>
+    </div>
+    <div id="sideNav">
+
+        <nav>
+            <ul>
+                <h2>R<span style="color: rgb(76, 119, 201);">E</span>XA Global</h2>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./citizen.html">Citizenship</a></li>
+                <li><a href="./residency.html">Residence</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="./countries.html">Countries</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="./newsroom.htm">News Room</a></li>
+                <li><a href="./events.html">Events</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="subscribe">
+            <div class="form">
+                <p> Subscribe To Our News Letter</p>
+                <input type="email" class="form__email" placeholder="Enter your email address"
+                    style=" font-size: 10px;" />
+                <button class="form__button">Send</button>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <a class="hover-fx">
+                <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M18.3174 14.0625L19.0117 9.53809H14.6704V6.60205C14.6704 5.36426 15.2769 4.15771 17.2212 4.15771H19.1948V0.305664C19.1948 0.305664 17.4038 0 15.6914 0C12.1162 0 9.7793 2.16699 9.7793 6.08984V9.53809H5.80518V14.0625H9.7793V25H14.6704V14.0625H18.3174Z"
+                        fill="#162633" />
+                </svg>
+            </a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+            </a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                </svg></a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z" />
+                </svg></a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                </svg></a>
+            <a class="hover-fx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path
+                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                </svg></a>
+        </div>
+
+
+    </div>
+    <div id="menuBtn">
+        <img src="assets/icons/menu.png" id="menu">
+    </div>
+
+    <div class="parallax"></div>
+    <h1>Citizenship Programs</h1>
+    <section class="marevr">
+        <div class="tc">
+            <h2>Leading Citizenship by Investment Programs</h2>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                Citizenship by investment programs provide families with the privilege of acquiring an alternative
+                citizenship, which in turn gives them the right to travel freely to various destinations and to settle
+                in another country. Over 100 countries in the world have some form of investment migration legislation
+                in place. Of these, about 30 residence and/or citizenship by investment programs are running
+                successfully, many of which were designed and set up by REXA Global.
+            </div>
+            <div class="col">
+                More than ever before, wealthy individuals are pursuing citizenship options as the most effective way to
+                access previously unimagined opportunities. Listed below are the details of the most credible and
+                successful citizenship programs offered by REXA Global.
+            </div>
+
+
+        </div>
+        <a class="ghost_btn1 btncent" href="#">Private Client Query</a>
+
+        <!-- section5 citizenship -->
+        <div class="container " data-aos="zoom-out" data-aos-anchor-placement="center-bottom" data-aos-duration="3000"
+            style="margin-top: 10rem;">
+            <h2 class="sec5-1">Top-Tier Citizenship Programs</h2>
+            <p class="sec5-1">Our Citizenship Solutions</p>
+            <div class="row " data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000">
+                <div class="col">
+                    <a href="#"><img src="./assets/countries/Antigua and Barbuda.png" alt=""></a>
+                    <br>
+                    <h4>Antigua and Barbuda</h4>
+                    <br>
+                    <p class="ovfl">Antigua and Barbuda offers one of the most competitive citizenship programs in the
+                        Caribbean. Options
+                        start from USD 100,000.</p>
+
+                    <a class="ghost_btn2" href="#">Learn More</a>
+
+                </div>
+                <div class="col">
+                    <a href="#"><img src="./assets/countries/Austria.png" alt=""></a>
+                    <br>
+                    <h4>Austria</h4>
+                    <br>
+                    <p class="ovfl">Antigua and Barbuda offers one of the most competitive citizenship programs in the
+                        Caribbean. Options
+                        start from USD 100,000.</p>
+
+                    <a class="ghost_btn2" href="#">Learn More</a>
+
+                </div>
+                <div class="col">
+                    <a href="#"><img src="./assets/countries/Dominica.png" alt=""></a>
+                    <br>
+                    <h4>Dominica</h4>
+                    <br>
+                    <p class="ovfl">Dominica offers an attractive citizenship program with a real estate option.
+                        Required
+                        contributions
+                        start from USD 100,000.</p>
+
+                    <a class="ghost_btn2" href="#">Learn More</a>
+
+                </div>
+                <div class="col">
+                    <a href="#"><img src="./assets/countries/Grenada.png" alt=""></a>
+                    <br>
+                    <h4>Grenada</h4>
+                    <br>
+                    <p class="ovfl">Grenada has the only Caribbean citizenship program that holds an E-2 Investor Visa
+                        Treaty with the
+                        USA, allowing citizens to be eligible to apply for a non-immigrant visa.</p>
+
+                    <a class="ghost_btn2" href="#">Learn More</a>
+
+                </div>
+            </div>
+            <div class="row mt-5" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="col ">
+                    <a href="#"><img src="./assets/countries/St. Kitts and Nevis.png" alt=""></a>
+                    <br>
+                    <h4>St. Kitts and Nevis</h4>
+                    <br>
+                    <p class="ovfl">St. Kitts and Nevis has one of the strongest passports among all the Caribbean
+                        citizenship programs. A donation of USD 150,000 is required.</p>
+
+                    <a class="ghost_btn2" href="#">Learn More</a>
+
+                </div>
+                <div class="col">
+                    <a href="#"><img src="./assets/countries/St. Lucia.png" alt=""></a>
+                    <br>
+                    <h4>St. Lucia </h4>
+                    <br>
+                    <p class="ovfl">The St. Lucia Citizenship by Investment Program offers a real estate development
+                        option
+                        and visa-free access to 146 destinations. A donation of USD 100,000 is required..</p>
+
+                    <a class="ghost_btn2" href="#">Learn More</a>
+
+                </div>
+                <div class="col">
+                    <a href="#"><img src="./assets/countries/Türkiye.png" alt=""></a>
+                    <br>
+                    <h4>Türkiye</h4>
+                    <br>
+                    <p class="ovfl">The Türkiye Citizenship by Investment Program provides citizenship of a country with
+                        links to both Asia and Europe and access to the markets in both regions.</p>
+
+                    <a class="ghost_btn2" href="#">Learn More</a>
+
+                </div>
+                <div class="col"></div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- backgroungthing -->
+    <div class="bgt">
+        <h2>Citizenship Planning</h2>
+        <br>
+        <div class="row">
+            <div class="col speh">
+                <h3>Citizenship by Investment Overview</h3>
+                <p>Citizenship by investment programs offer you the opportunity to legally acquire a new citizenship
+                    quickly and simply, without onerous, typical visa and passport application processes.</p>
+                <a class="ghost_btn" href="#">Learn More</a>
+            </div>
+            <div class="col speh">
+                <h3>Why Citizenship by Investment?</h3>
+                <p>In an unsettled, ever-changing world, acquiring an alternative citizenship is a wise decision and an
+                    investment for the future.</p>
+                <a class="ghost_btn" href="#">Learn More</a>
+            </div>
+            <div class="col speh">
+                <h3>Important Points </h3>
+                <p>Citizenship is the most privileged form of nationality, a broader term that is used in international
+                    law to denote all persons whom a state is entitled to protect.</p>
+                <a class="ghost_btn" href="#">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+    <section class="marevr bgglobe">
+        <h2>An Introduction to Citizenship by Investment</h2>
+        <div class="row px-5  mt-5">
+            <div class="col">
+                <p>Principal grounds for acquiring citizenship are birth within a certain territory, descent from a
+                    citizen parent, marriage to a citizen, and naturalization. The conditions under which the privilege
+                    of naturalization is granted vary from state to state, but family relationships or lengthy periods
+                    of residence are usually essential, besides character and other requirements. While residence is
+                    granted to investors and wealthy individuals in most countries, there are currently only 11
+                    countries that offer citizenship by investment programs that provide a direct route to citizenship
+                    based on investment and that have passed REXA Global’ country due diligence: Austria, Antigua
+                    and Barbuda, Dominica, Grenada, Jordan, Malta, Montenegro, North Macedonia, St. Kitts and Nevis, St.
+                    Lucia, and Türkiye. The programs of Antigua and Barbuda and St. Kitts and Nevis have been designed
+                    by REXA Global under relevant government mandates.</p>
+
+                <br>
+                <p>Other countries offer a route to citizenship following a reasonable period of residence, such as
+                    Australia, Canada, Greece, Portugal, Singapore, the UK, and the USA.</p>
+
+                <h3>Grant of citizenship on the basis of an investment</h3>
+                <p>Most countries have provisions that allow their government to grant citizenship in return for major
+                    contributions to society, culture, the economy, and other interests of the state. However, this
+                    discretion of the government is exercised extremely rarely.</p>
+                <p>Several countries had programs in place at different times in the past that were specifically
+                    designed to attract foreign investors in return for citizenship. These include Ireland, whose
+                    program was terminated in 2001, Belize (until 2002), Grenada (terminated 2001 but reopened in 2014),
+                    Cape Verde, Seychelles, Slovakia, and several others.</p>
+                <br>
+                <h4>Citizenship by investment options</h4>
+                <p>Citizenship by investment programs offer you the opportunity to legally acquire a new nationality and
+                    an alternative passport quickly and simply, without major disruption to your life.</p>
+                <p>The programs that REXA Global offers are considered sufficiently clear in law and processes and
+                    have sufficient reputation and transparency to be considered the top tier of citizenship by
+                    investment programs.</p>
+                <p>We have studied all current programs and constantly monitor new developments. REXA Global has a
+                    unique position in that we are the only firm to have advised many different governments on projects
+                    ranging from strategic consulting to the design, implementation, and operation of investment-related
+                    residence and citizenship programs. The firm continues to advise and assist countries around the
+                    world in this field.</p>
+                <p>
+                    This record of designing, implementing, operating, and positioning citizenship by investment
+                    programs on behalf of governments is unique to REXA Global. It is an important and distinct
+                    advantage that all our clients enjoy.
+                </p>
+
+
+            </div>
+            <div class="col-5 mt-5 pt-5">
+                <img src="./assets/images/IMG-4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- ctc -->
+    <!-- <div class="contact container">
+        <form action="https://formspree.io/f/xzbowpjq" method="POST">
+            <div class="form">
+                <div class="form-txt">
+                    <h1>Contact Us</h1>
+                    <span>As you might expect of a company that began as a high-end interiors contractor, we pay strict
+                    attention.</span>
+                    <h3>USA</h3>
+                    <p>195 E Parker Square Dr, Parker, CO 801<br>+43 982-314-0958</p>
+                    <h3>India</h3>
+                    <p>HW95+C9C, Mhada Colony, Viman Nagar, Pune, Maharashtra<br>411014</p>
+                </div>
+                <div class="form-details">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea>
+                    <button>SEND MESSAGE</button>
+                </div>
+            </div>
+        </form>
+    </div> -->
+    <iframe src="./ctc.htm" frameborder="0" style="width: 100vw; height:60vh;overflow: hidden;" scroll="no"></iframe>
+    <iframe src="./footer.htm" style="width: 100%; height: 30vh; margin-bottom: -6px;" frameborder="0"></iframe>
+
+
+
+
+
+
+
+    <!-- <script></script> -->
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right == "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "assets/icons/close.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "assets/icons/menu.png";
+            }
+        }
+
+        $(document).ready(function () {
+
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+    <!-- bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
